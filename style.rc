@@ -398,8 +398,8 @@ axes.prop_cycle: cycler('color', ['00549F', 'CC071E', '57AB27', 'F6A800',  '6121
 #axes.autolimit_mode: data  # If "data", use axes.xmargin and axes.ymargin as is.
                             # If "round_numbers", after application of margins, axis
                             # limits are further expanded to the nearest "round" number.
-#polaraxes.grid: True  # display grid on polar axes
-#axes3d.grid:    True  # display grid on 3D axes
+polaraxes.grid: True  # display grid on polar axes
+axes3d.grid:    True  # display grid on 3D axes
 
 
 ## ***************************************************************************
@@ -451,7 +451,7 @@ xtick.bottom:        True    # draw ticks on the bottom side
 #xtick.major.pad:     3.5     # distance to major tick label in points
 #xtick.minor.pad:     3.4     # distance to the minor tick label in points
 #xtick.color:         black   # color of the ticks
-#xtick.labelcolor:    inherit # color of the tick labels or inherit from xtick.color
+xtick.labelcolor:    inherit # color of the tick labels or inherit from xtick.color
 #xtick.labelsize:     medium  # font size of the tick labels
 xtick.direction:     in     # direction: {in, out, inout}
 xtick.minor.visible: True   # visibility of minor ticks on x-axis
@@ -472,10 +472,10 @@ ytick.right:         True   # draw ticks on the right side
 #ytick.major.pad:     3.5     # distance to major tick label in points
 #ytick.minor.pad:     3.4     # distance to the minor tick label in points
 #ytick.color:         black   # color of the ticks
-#ytick.labelcolor:    inherit # color of the tick labels or inherit from ytick.color
+ytick.labelcolor:    inherit # color of the tick labels or inherit from ytick.color
 #ytick.labelsize:     medium  # font size of the tick labels
 ytick.direction:     in     # direction: {in, out, inout}
-ytick.minor.visible: False   # visibility of minor ticks on y-axis
+ytick.minor.visible: True   # visibility of minor ticks on y-axis
 ytick.major.left:    True    # draw y axis left major ticks
 ytick.major.right:   True    # draw y axis right major ticks
 ytick.minor.left:    True    # draw y axis left minor ticks
@@ -526,7 +526,7 @@ grid.alpha:     1.0     # transparency, between 0.0 and 1.0
 ## See https://matplotlib.org/api/figure_api.html#matplotlib.figure.Figure
 #figure.titlesize:   large     # size of the figure title (``Figure.suptitle()``)
 #figure.titleweight: normal    # weight of the figure title
-#figure.figsize:     6.4, 4.8  # figure size in inches
+figure.figsize:     6.4, 4.8  # figure size in inches
 #figure.dpi:         100       # figure dots per inch
 #figure.facecolor:   white     # figure face color
 #figure.edgecolor:   white     # figure edge color
@@ -537,17 +537,17 @@ grid.alpha:     1.0     # transparency, between 0.0 and 1.0
 #figure.raise_window : True    # Raise the GUI window to front when show() is called.
 
 ## The figure subplot parameters.  All dimensions are a fraction of the figure width and height.
-#figure.subplot.left:   0.125  # the left side of the subplots of the figure
-#figure.subplot.right:  0.9    # the right side of the subplots of the figure
-#figure.subplot.bottom: 0.11   # the bottom of the subplots of the figure
-#figure.subplot.top:    0.88   # the top of the subplots of the figure
-#figure.subplot.wspace: 0.2    # the amount of width reserved for space between subplots,
+figure.subplot.left:   0.1  # the left side of the subplots of the figure
+figure.subplot.right:  0.9    # the right side of the subplots of the figure
+figure.subplot.bottom: 0.1   # the bottom of the subplots of the figure
+figure.subplot.top:    0.9   # the top of the subplots of the figure
+figure.subplot.wspace: 0.1    # the amount of width reserved for space between subplots,
                                # expressed as a fraction of the average axis width
-#figure.subplot.hspace: 0.2    # the amount of height reserved for space between subplots,
+figure.subplot.hspace: 0.1    # the amount of height reserved for space between subplots,
                                # expressed as a fraction of the average axis height
 
 ## Figure layout
-#figure.autolayout: False  # When True, automatically adjust subplot
+figure.autolayout: False  # When True, automatically adjust subplot
                            # parameters to make the plot fit the figure
                            # using `tight_layout`
 #figure.constrained_layout.use: False  # When True, automatically make plot
@@ -649,7 +649,7 @@ grid.alpha:     1.0     # transparency, between 0.0 and 1.0
 #savefig.dpi:       figure      # figure dots per inch or 'figure'
 #savefig.facecolor: auto        # figure face color when saving
 #savefig.edgecolor: auto        # figure edge color when saving
-#savefig.format:    png         # {png, ps, pdf, svg}
+savefig.format:    pdf         # {png, ps, pdf, svg}
 #savefig.bbox:      standard    # {tight, standard}
                                 # 'tight' is incompatible with pipe-based animation
                                 # backends (e.g. 'ffmpeg') but will work with those
