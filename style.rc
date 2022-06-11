@@ -352,7 +352,7 @@
 #axes.labelpad:      4.0     # space between label and axis
 #axes.labelweight:   normal  # weight of the x and y labels
 #axes.labelcolor:    black
-#axes.axisbelow:     line    # draw axis gridlines and ticks:
+axes.axisbelow:     True    # draw axis gridlines and ticks:
                              #     - below patches (True)
                              #     - above patches but below lines ('line')
                              #     - above all (False)
@@ -448,7 +448,7 @@ xtick.bottom:        True    # draw ticks on the bottom side
 #xtick.minor.size:    2       # minor tick size in points
 #xtick.major.width:   0.8     # major tick width in points
 #xtick.minor.width:   0.6     # minor tick width in points
-#xtick.major.pad:     3.5     # distance to major tick label in points
+xtick.major.pad:     4.5     # distance to major tick label in points
 #xtick.minor.pad:     3.4     # distance to the minor tick label in points
 #xtick.color:         black   # color of the ticks
 xtick.labelcolor:    inherit # color of the tick labels or inherit from xtick.color
@@ -469,7 +469,7 @@ ytick.right:         True   # draw ticks on the right side
 #ytick.minor.size:    2       # minor tick size in points
 #ytick.major.width:   0.8     # major tick width in points
 #ytick.minor.width:   0.6     # minor tick width in points
-#ytick.major.pad:     3.5     # distance to major tick label in points
+ytick.major.pad:     4.5     # distance to major tick label in points
 #ytick.minor.pad:     3.4     # distance to the minor tick label in points
 #ytick.color:         black   # color of the ticks
 ytick.labelcolor:    inherit # color of the tick labels or inherit from ytick.color
@@ -539,11 +539,11 @@ figure.figsize:     6.4, 4.8  # figure size in inches
 ## The figure subplot parameters.  All dimensions are a fraction of the figure width and height.
 figure.subplot.left:   0.1  # the left side of the subplots of the figure
 figure.subplot.right:  0.9    # the right side of the subplots of the figure
-figure.subplot.bottom: 0.1   # the bottom of the subplots of the figure
-figure.subplot.top:    0.9   # the top of the subplots of the figure
-figure.subplot.wspace: 0.1    # the amount of width reserved for space between subplots,
+figure.subplot.bottom: 0.15   # the bottom of the subplots of the figure
+figure.subplot.top:    0.85   # the top of the subplots of the figure
+figure.subplot.wspace: 0.05    # the amount of width reserved for space between subplots,
                                # expressed as a fraction of the average axis width
-figure.subplot.hspace: 0.1    # the amount of height reserved for space between subplots,
+figure.subplot.hspace: 0.05    # the amount of height reserved for space between subplots,
                                # expressed as a fraction of the average axis height
 
 ## Figure layout
