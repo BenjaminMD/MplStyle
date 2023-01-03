@@ -305,7 +305,8 @@ font.size:    12.0
                         # PostScript (PSNFSS) font packages may also be
                         # loaded, depending on your font settings.
 text.latex.preamble: "\usepackage[default,regular,black]{sourceserifpro} \usepackage[T1]{fontenc} \usepackage[italic, symbolgreek]{mathastext}"
-
+mathtext.fontset: "custom"
+mathtext.it:  "sourceserifpro:italic"
 ## The following settings allow you to select the fonts in math mode.
 #mathtext.fontset: dejavusans  # Should be 'dejavusans' (default),
                                # 'dejavuserif', 'cm' (Computer Modern), 'stix',
@@ -315,7 +316,7 @@ text.latex.preamble: "\usepackage[default,regular,black]{sourceserifpro} \usepac
 ## settings which map a TeX font name to a fontconfig font pattern.  (These
 ## settings are not used for other font sets.)
 #mathtext.bf:  sans:bold
-#mathtext.cal: cursive
+mathtext.cal: cursive
 #mathtext.it:  sans:italic
 #mathtext.rm:  sans
 #mathtext.sf:  sans
